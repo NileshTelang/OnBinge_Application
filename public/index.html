@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Unlimited TV Shows and Movies </title>
+
+    <!-- favicon -->
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    background: #181818;
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    background: #000;
+    padding: 0 2.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 60%;
+}
+
+
+.btn{
+    border: 1px solid #fff;
+    border-radius: 2px;
+    background: #dd0e15;
+    border-color: #dd0e15;
+    color: #fff;
+    height: 35px;
+    padding: 0 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.join-box{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-left: auto;
+}
+
+.join-msg{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+</style>
+</head>
+<body>
+     <!-- navbar -->
+     <form action="/signup" method="get">
+        <nav class="navbar">
+            <img src="img/logo.png" class="logo" alt="Netflix logo">
+            <div class="join-box">
+                <p class="join-msg">unlimited TV shows & movies</p>
+                
+         <button type="submit" class="btn" onclick="window.location.href = '/signup.html'"> Sign in</button>
+    
+            </div>
+    
+        </nav>
+     </form>
+     
+
+    <img src="img/christian-movies-on-netflix-1669085777.jpg" alt="Home Image" height="750" width="100%" >
+</body>
+</html>
