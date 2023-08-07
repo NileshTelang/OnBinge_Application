@@ -1,8 +1,12 @@
+require('dotenv').config();
+
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const path = require('path')
 const md5 = require('md5')
+
+const URI = process.env.MONGODB_URI;
 
 let initial_path = path.join(__dirname, "public")
 
@@ -45,7 +49,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect(URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
