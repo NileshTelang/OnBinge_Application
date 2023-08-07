@@ -121,6 +121,6 @@ app.get('/userss',(req,res)=>{
 
 
 
-app.listen(4131, () => {
+app.listen(process.env.PORT || 4131, () => {
     console.log("Server is listening on port http://localhost:4131")
 })
